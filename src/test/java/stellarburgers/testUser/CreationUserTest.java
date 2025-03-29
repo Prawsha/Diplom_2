@@ -37,11 +37,8 @@ public class CreationUserTest {
     public void createTheSameUser() {
         Response response1 = createUser(login, password, firstName);
         String accessToken1 = response1.jsonPath().getString("accessToken");
-
         Response response2 = createUser(login, password, firstName);
-        // Проверка ответа по второму юзеру - дубликату
         validateResponseError(response2, 403, "User already exists");
-
         setAccessToken(accessToken1);
     }
 
