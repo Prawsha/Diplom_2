@@ -15,7 +15,7 @@
         <!-- версия Aspectj -->
         <aspectj.version>1.9.7</aspectj.version>
         <!-- версия Allure -->
-        <allure.version>2.29.1</allure.version>
+        <allure.version>2.15.0</allure.version>
     </properties>
 
     <dependencies>
@@ -52,7 +52,6 @@
             <artifactId>gson</artifactId>
             <version>2.12.1</version>
         </dependency>
-        <!-- Lombok (опционально, для удобства) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -98,7 +97,7 @@
                     <artifactId>allure-maven</artifactId>
                     <version>2.10.0</version>
                     <configuration>
-                        <reportVersion>2.29.1</reportVersion>
+                        <reportVersion>2.15.0</reportVersion>
                     </configuration>
                 </plugin>
 
